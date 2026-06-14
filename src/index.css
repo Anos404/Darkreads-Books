@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Crimson Text", Georgia, serif;
+  --font-sans: "Source Code Pro", monospace; /* We use Source Code Pro for technical label feel */
+  --font-display: "Cinzel", "Times New Roman", serif;
+  
+  --color-ink: #0d0d0f;
+  --color-paper: #111114;
+  --color-surface: #18181c;
+  --color-surface-hover: #1f1f25;
+  --color-muted-text: #8a8680;
+  --color-faint-text: #4a4845;
+  --color-blood: #8b0000;
+  --color-blood-bright: #c41e1e;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ink);
+    color: #e8e4dd;
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b1212;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c41e1e;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DarkReads",
+  "description": "An immersive curated platform for dark reality literature, featuring custom search, depth filters, and literary deep dives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
